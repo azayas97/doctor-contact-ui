@@ -1,0 +1,26 @@
+{
+  "watermarks": {
+    "lines": [75, 90],
+    "functions": [75, 90],
+    "branches": [75, 90],
+    "statements": [75, 90]
+  },
+  "branches": 95,
+  "lines": 95,
+  "functions": 95,
+  "statements": 95,
+  "exclude": [
+    "src/test/**",
+    "src/__generated__/**",
+    "cypress/**",
+    "**.config.ts",
+    "src/**.ts",
+    "src/**.tsx"
+  ],
+  "include": [
+    "src/**/**.tsx",
+    "src/**/**.ts"
+  ],
+  "all": true,
+  "check-coverage": true
+}

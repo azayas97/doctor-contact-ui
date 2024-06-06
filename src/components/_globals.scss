@@ -1,0 +1,30 @@
+$background: #F2F9F1;
+$primary-green: #388E3C;
+$secondary-green: #8BC34A;
+$secondary-green-hover: #a2d468;
+$light-green: #DDEEDF;
+$error: #FF5959;
+$black: #3C3B3B;
+$white: #FFFFFF;
+$disabled: #DDDDDD;
+$black-40: #3C3B3B66;
+$font-family: 'Inter', sans-serif;
+
+html, body, #root {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+p, h1, h2, h3, strong, label {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: $font-family;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

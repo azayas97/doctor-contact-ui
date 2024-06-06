@@ -1,0 +1,38 @@
+@use '/src/components/globals' as globals;
+
+.login-background {
+  height: 100%;
+  width: 100%;
+  background-color: globals.$light-green;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  .login-form-container {
+    height: 30em;
+    width: 35em;
+    border-radius: 2em;
+    background-color: globals.$white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .login-form-fields {
+      text-align: start;
+      margin-block: 3em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .login-form-submit {
+      margin-top: auto;
+    }
+
+    h1, p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.dashboard-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  flex: 1;
+  
+  & .dashboard-doctor-list {
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-block: 3em;
+    gap: 1em;
+  }
+  
+  & .button-container {
+    align-self: flex-end;
+    margin-top: auto;
+  }
+}

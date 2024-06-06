@@ -1,0 +1,22 @@
+@use '/src/components/globals' as globals;
+
+.dcs-field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  .dcs-field {
+    padding-inline: 1em;
+    padding-block: 1em;
+    border-radius: 1em;
+    border: 2px solid globals.$black;
+    color: globals.$black;
+    outline: none;
+    transition: .3s;
+    font-size: 14px;
+  
+    &:focus-visible {
+      border-color: globals.$primary-green;
+    }
+  }
+}

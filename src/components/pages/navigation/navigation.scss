@@ -1,0 +1,21 @@
+@use '/src/components/globals' as globals;
+
+.navigation-container {
+  display: flex;
+  z-index: 10;
+  height: 4em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: globals.$primary-green;
+
+  .navigation-link {
+    cursor: pointer;
+  }
+
+  p, strong {
+    margin-block: 1em;
+    margin-inline: 2em;
+    color: globals.$white;
+  }
+}

@@ -1,0 +1,52 @@
+@use 'src/components/globals' as globals;
+
+.dcs-loader-container {
+  display: flex;
+  width: 100%;
+  margin-block: 1em;
+  justify-content: center;
+
+  .dcs-loader {
+    width: 1.5em;
+    height: 1.5em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: .75em solid globals.$light-green;
+    border-right-color: globals.$primary-green;
+    animation: loaderAnimation .5s infinite linear;
+  }
+}
+
+.dcs-loader-action-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  margin-block: 1em;
+  justify-content: center;
+
+  .dcs-loader {
+    width: 1.5em;
+    height: 1.5em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: .75em solid globals.$light-green;
+    border-right-color: globals.$primary-green;
+    animation: loaderAnimation .5s infinite linear, showAnimation .3s ease-in-out;
+  }
+}
+
+@keyframes showAnimation {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes loaderAnimation {
+  to {
+    transform: rotate(1turn)
+  }
+}

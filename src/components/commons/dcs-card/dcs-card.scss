@@ -1,0 +1,50 @@
+@use '/src/components/globals' as globals;
+
+.card-container {
+  height: 7em;
+  width: 18em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: globals.$light-green;
+  color: globals.$black;
+
+  & .card-name-section {
+    display: flex;
+    gap: 1em;
+
+    & .card-profile {
+      background-color: globals.$white;
+      height: 3em;
+      width: 3em;
+      border-radius: 3em;
+    }
+
+    & .card-name {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  .card-contact {
+    display: flex;
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    gap: 5px;
+  }
+
+  .card-actions {
+    display: flex;
+    gap: .5em;
+
+    span {
+      cursor: pointer;
+    }
+
+    img {
+      width: 1em;
+      height: 1em;
+    }
+  }
+}

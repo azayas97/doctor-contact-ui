@@ -1,0 +1,10 @@
+@use '/src/components/globals' as globals;
+
+.error-banner-container {
+  padding: 1em;
+  background-color: globals.$error;
+
+  h1, p {
+    color: globals.$white;
+  }
+}

@@ -1,0 +1,38 @@
+@use '/src/components/globals' as globals;
+
+.dcs-button {
+  padding-inline: 2em;
+  padding-block: 1em;
+  border-radius: 1em;
+  width: 12em;
+  border: none;
+  font-family: globals.$font-family;
+  cursor: pointer;
+  transition: .3s;
+
+  &-disabled {
+    pointer-events: none;
+    background-color: globals.$disabled;
+    color: globals.$black;
+  }
+
+  &-primary {
+    background-color: globals.$secondary-green;
+    color: globals.$white;
+
+    &:hover {
+      background-color: globals.$secondary-green-hover;
+    }
+  }
+
+  &-secondary {
+    background-color: globals.$background;
+    box-shadow: inset 0 0 0 2px globals.$primary-green;
+    color: globals.$black;
+
+    &:hover {
+      background-color: globals.$primary-green;
+      color: globals.$white;
+    }
+  }
+}
